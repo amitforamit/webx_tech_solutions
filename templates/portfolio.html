@@ -1,0 +1,174 @@
+{% extends "base.html" %}
+
+{% block title %}Portfolio - WebX Tech Solutions{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1>Our Portfolio</h1>
+        <p>Check out some of our recent projects</p>
+    </div>
+</section>
+
+<section class="portfolio-section">
+    <div class="container">
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <div class="portfolio-image">
+                    <div class="portfolio-placeholder">
+                        <i class="fas fa-shopping-bag fa-3x"></i>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Fashion E-commerce Store</h3>
+                        <p>Custom online store with advanced filtering and payment integration</p>
+                        <div class="portfolio-tags">
+                            <span>E-commerce</span>
+                            <span>SEO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="portfolio-image">
+                    <div class="portfolio-placeholder">
+                        <i class="fas fa-utensils fa-3x"></i>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Restaurant Website</h3>
+                        <p>Responsive website with online ordering and reservation system</p>
+                        <div class="portfolio-tags">
+                            <span>Web Design</span>
+                            <span>Custom Dev</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="portfolio-image">
+                    <div class="portfolio-placeholder">
+                        <i class="fas fa-heartbeat fa-3x"></i>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Healthcare Portal</h3>
+                        <p>Secure patient portal with appointment booking and records management</p>
+                        <div class="portfolio-tags">
+                            <span>Web App</span>
+                            <span>Security</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="portfolio-image">
+                    <div class="portfolio-placeholder">
+                        <i class="fas fa-home fa-3x"></i>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Real Estate Platform</h3>
+                        <p>Property listing website with advanced search and map integration</p>
+                        <div class="portfolio-tags">
+                            <span>Custom Dev</span>
+                            <span>SEO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="portfolio-image">
+                    <div class="portfolio-placeholder">
+                        <i class="fas fa-graduation-cap fa-3x"></i>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Educational Platform</h3>
+                        <p>Learning management system with course creation and student tracking</p>
+                        <div class="portfolio-tags">
+                            <span>LMS</span>
+                            <span>Custom Dev</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="portfolio-image">
+                    <div class="portfolio-placeholder">
+                        <i class="fas fa-briefcase fa-3x"></i>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Corporate Website</h3>
+                        <p>Professional business website with blog and client portal</p>
+                        <div class="portfolio-tags">
+                            <span>Corporate</span>
+                            <span>SEO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials">
+    <div class="container">
+        <h2 class="section-title">What Our Clients Say</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"WebX Tech Solutions transformed our online presence. Our website traffic increased by 300% within 3 months of their SEO optimization!"</p>
+                <div class="testimonial-author">
+                    <h4>Sarah Johnson</h4>
+                    <span>CEO, Fashion Boutique</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"Professional, responsive, and creative. They built our e-commerce store from scratch and it's been performing beautifully!"</p>
+                <div class="testimonial-author">
+                    <h4>Michael Chen</h4>
+                    <span>Owner, Tech Store</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"Excellent service and support. They not only built our website but continue to help us grow our online business."</p>
+                <div class="testimonial-author">
+                    <h4>Emily Rodriguez</h4>
+                    <span>Director, Healthcare Solutions</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <div class="container">
+        <h2>Ready to Start Your Project?</h2>
+        <p>Let's bring your vision to life</p>
+        <a href="{{ url_for('contact') }}" class="btn btn-primary btn-large">Contact Us Today</a>
+    </div>
+</section>
+{% endblock %}

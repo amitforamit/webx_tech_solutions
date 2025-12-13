@@ -1,0 +1,175 @@
+{% extends "base.html" %}
+
+{% block title %}Our Services - WebX Tech Solutions{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1>Our Services</h1>
+        <p>Comprehensive web solutions tailored to your business needs</p>
+    </div>
+</section>
+
+<section class="services-detailed">
+    <div class="container">
+        <div class="service-detail">
+            <div class="service-detail-content">
+                <div class="service-detail-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h2>Custom Website Development</h2>
+                <p>We build custom websites from the ground up, tailored specifically to your business requirements and goals. Our development process ensures your website is fast, secure, and scalable.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Custom design and development</li>
+                    <li><i class="fas fa-check"></i> Responsive and mobile-friendly</li>
+                    <li><i class="fas fa-check"></i> Content Management Systems (CMS)</li>
+                    <li><i class="fas fa-check"></i> API integrations</li>
+                    <li><i class="fas fa-check"></i> Database design and optimization</li>
+                    <li><i class="fas fa-check"></i> Progressive Web Apps (PWA)</li>
+                </ul>
+            </div>
+            <div class="service-detail-image">
+                <div class="service-placeholder">
+                    <i class="fas fa-laptop-code fa-5x"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-detail reverse">
+            <div class="service-detail-content">
+                <div class="service-detail-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h2>SEO Optimization</h2>
+                <p>Increase your online visibility and drive organic traffic with our comprehensive SEO services. We use proven strategies to improve your search engine rankings and help you reach your target audience.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Keyword research and analysis</li>
+                    <li><i class="fas fa-check"></i> On-page SEO optimization</li>
+                    <li><i class="fas fa-check"></i> Technical SEO audits</li>
+                    <li><i class="fas fa-check"></i> Link building strategies</li>
+                    <li><i class="fas fa-check"></i> Content optimization</li>
+                    <li><i class="fas fa-check"></i> Local SEO services</li>
+                </ul>
+            </div>
+            <div class="service-detail-image">
+                <div class="service-placeholder">
+                    <i class="fas fa-chart-line fa-5x"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-detail">
+            <div class="service-detail-content">
+                <div class="service-detail-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <h2>E-commerce Solutions</h2>
+                <p>Launch and grow your online store with our powerful e-commerce solutions. We build secure, user-friendly platforms that drive sales and provide excellent customer experiences.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Custom e-commerce development</li>
+                    <li><i class="fas fa-check"></i> Payment gateway integration</li>
+                    <li><i class="fas fa-check"></i> Inventory management systems</li>
+                    <li><i class="fas fa-check"></i> Shopping cart optimization</li>
+                    <li><i class="fas fa-check"></i> Product catalog management</li>
+                    <li><i class="fas fa-check"></i> Order tracking and fulfillment</li>
+                </ul>
+            </div>
+            <div class="service-detail-image">
+                <div class="service-placeholder">
+                    <i class="fas fa-store fa-5x"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-detail reverse">
+            <div class="service-detail-content">
+                <div class="service-detail-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h2>Website Maintenance & Support</h2>
+                <p>Keep your website running smoothly with our comprehensive maintenance and support services. We handle updates, security, backups, and troubleshooting so you can focus on your business.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Regular updates and patches</li>
+                    <li><i class="fas fa-check"></i> Security monitoring</li>
+                    <li><i class="fas fa-check"></i> Performance optimization</li>
+                    <li><i class="fas fa-check"></i> Backup and recovery</li>
+                    <li><i class="fas fa-check"></i> Bug fixes and troubleshooting</li>
+                    <li><i class="fas fa-check"></i> 24/7 technical support</li>
+                </ul>
+            </div>
+            <div class="service-detail-image">
+                <div class="service-placeholder">
+                    <i class="fas fa-wrench fa-5x"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="pricing-preview">
+    <div class="container">
+        <h2 class="section-title">Flexible Pricing Plans</h2>
+        <p class="pricing-intro">Choose the perfect plan for your business needs</p>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3>Starter</h3>
+                <div class="price">
+                    <span class="currency">$</span>
+                    <span class="amount">999</span>
+                </div>
+                <p class="pricing-description">Perfect for small businesses and startups</p>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> 5-page website</li>
+                    <li><i class="fas fa-check"></i> Responsive design</li>
+                    <li><i class="fas fa-check"></i> Basic SEO setup</li>
+                    <li><i class="fas fa-check"></i> Contact form</li>
+                    <li><i class="fas fa-check"></i> 30 days support</li>
+                </ul>
+                <a href="{{ url_for('contact') }}" class="btn btn-secondary">Get Started</a>
+            </div>
+            <div class="pricing-card featured">
+                <div class="popular-badge">Most Popular</div>
+                <h3>Professional</h3>
+                <div class="price">
+                    <span class="currency">$</span>
+                    <span class="amount">2,499</span>
+                </div>
+                <p class="pricing-description">Ideal for growing businesses</p>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> 10-page website</li>
+                    <li><i class="fas fa-check"></i> Custom design</li>
+                    <li><i class="fas fa-check"></i> Advanced SEO optimization</li>
+                    <li><i class="fas fa-check"></i> CMS integration</li>
+                    <li><i class="fas fa-check"></i> 90 days support</li>
+                </ul>
+                <a href="{{ url_for('contact') }}" class="btn btn-primary">Get Started</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Enterprise</h3>
+                <div class="price">
+                    <span class="currency">$</span>
+                    <span class="amount">5,999</span>
+                    <span class="plus">+</span>
+                </div>
+                <p class="pricing-description">For large-scale projects</p>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> Unlimited pages</li>
+                    <li><i class="fas fa-check"></i> Custom features</li>
+                    <li><i class="fas fa-check"></i> Complete SEO package</li>
+                    <li><i class="fas fa-check"></i> E-commerce capability</li>
+                    <li><i class="fas fa-check"></i> 1-year support</li>
+                </ul>
+                <a href="{{ url_for('contact') }}" class="btn btn-secondary">Get Started</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <div class="container">
+        <h2>Need a Custom Solution?</h2>
+        <p>Contact us to discuss your specific requirements</p>
+        <a href="{{ url_for('contact') }}" class="btn btn-primary btn-large">Contact Us</a>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+{% block title %}WebX Tech Solutions - Custom Websites & SEO Optimization{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title">Transform Your Digital Presence</h1>
+            <p class="hero-subtitle">We create custom websites and optimize them for search engines to help your business grow online</p>
+            <div class="hero-buttons">
+                <a href="{{ url_for('services') }}" class="btn btn-primary">Our Services</a>
+                <a href="{{ url_for('contact') }}" class="btn btn-secondary">Get Started</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <div class="container">
+        <h2 class="section-title">Why Choose WebX Tech Solutions?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>Custom Development</h3>
+                <p>Tailored websites built to match your unique business needs and brand identity</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3>SEO Optimization</h3>
+                <p>Increase your visibility on search engines and drive more organic traffic</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Responsive Design</h3>
+                <p>Beautiful websites that work perfectly on all devices and screen sizes</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h3>Fast Performance</h3>
+                <p>Lightning-fast loading speeds for better user experience and SEO rankings</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Secure & Reliable</h3>
+                <p>Built with security best practices to protect your business and customers</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3>24/7 Support</h3>
+                <p>Ongoing maintenance and support to keep your website running smoothly</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services-preview">
+    <div class="container">
+        <h2 class="section-title">Our Core Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Custom Website Development</h3>
+                <p>From simple landing pages to complex web applications, we build websites that drive results and exceed expectations.</p>
+                <a href="{{ url_for('services') }}" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>SEO Optimization</h3>
+                <p>Boost your search engine rankings with our comprehensive SEO strategies including on-page, off-page, and technical SEO.</p>
+                <a href="{{ url_for('services') }}" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <h3>E-commerce Solutions</h3>
+                <p>Launch your online store with powerful e-commerce platforms optimized for conversions and user experience.</p>
+                <a href="{{ url_for('services') }}" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <div class="container">
+        <h2>Ready to Grow Your Business Online?</h2>
+        <p>Let's discuss how we can help you achieve your digital goals</p>
+        <a href="{{ url_for('contact') }}" class="btn btn-primary btn-large">Contact Us Today</a>
+    </div>
+</section>
+{% endblock %}
